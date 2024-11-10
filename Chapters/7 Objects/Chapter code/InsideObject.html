@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects</title>
+</head>
+<body>
+  <script>
+     let product = {
+      company:'Mango' ,
+      price:899,
+      item_name:'T-shirt',
+      displayPrice: function() {
+        console.log(`price of the product is ₹${this.price}`)
+      }
+    };
+    product.displayPrice();
+
+    //AutoBoxing
+
+    console.log('I Am An Indian Citizen');
+    console.log('I Am An Indian Citizen'.length);
+    console.log('I Am An Indian Citizen'.toUpperCase());
+    console.log('I Am An Indian Citizen'.replace('Citizen','Youth'));
+  </script>
+</body>
+</html>

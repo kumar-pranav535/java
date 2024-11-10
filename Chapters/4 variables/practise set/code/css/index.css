@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.class-button {
+  color: brown;
+}
+.c {
+  margin: 4px 4px;
+  padding: 5px 15px;
+  justify-content: space-between;
+  background-color: lightgreen;
+  border: none;
+  border-radius: 10px;
+}
+.d {
+  margin: 4px 4px;
+  padding: 5px 35px;
+  justify-content: space-between;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
