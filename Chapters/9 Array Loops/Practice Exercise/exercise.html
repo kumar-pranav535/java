@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>practice set</title>
+</head>
+<body>
+  <script>
+    let arr = [5,6];
+    arr.push(7);
+    arr.unshift(4);
+    console.log(arr);
+
+    function getElement(arrr,position) {
+      return arrr[position-1];
+    }
+    let arrr = [1,2,3,4,5,6,7,8,9];
+    console.log(getElement(arrr,6));
+
+
+    function arrCopy(arr) {
+      return arr.slice(0,arr.length);
+    }
+    let ar = [4,5,6,7];
+    let ar2 = arrCopy(arr);
+    ar2[0] = null;
+    console.log(ar);
+    console.log(ar2);
+
+
+    function isPrime(num) {
+      for (let i = 2; i < num; i++) {
+       if (num % i == 0) {
+        return false;
+       }
+      }
+      return true;
+    }
+    let num = 2;
+    let i = 0;
+    while (true) {
+      if (isPrime(num)) {
+        console.log(num);
+        i++;
+        if (i >= 5) {
+          break;
+        }
+      }
+      num++;
+    }
+
+    for (let i = 10; i > 0; i--) {
+      console.log(i);
+    }
+
+    let nums = [1,-6,5,7,-98];
+    for (let i = 0; i < nums.length; i++) {
+      if (nums[i] < 0) continue;
+      console.log(nums[i]);
+    }
+
+    let array = ['KG', 'Coding', 'JavaScript', 'Course', 'Is', 'Best'];
+    //let result = '';
+   // for (let i = 0; i < array.length; i++) {
+    //  result += array[i] + ' ';
+    //}
+    //console.log(result);
+    console.log(array.join(" "));
+  </script>
+</body>
+</html>

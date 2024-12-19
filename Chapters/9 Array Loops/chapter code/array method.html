@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Method</title>
+</head>
+<body>
+  <script>
+    let arr = [1,2,3];
+    console.log(arr);
+    arr.push(6);
+    console.log(arr);
+    console.log(`popped` + arr.pop());
+    console.log(arr);
+    console.log(`popped` + arr.pop());
+    console.log(arr);
+
+    let spl = [3,5,7,5];
+    console.log(spl);
+    spl.splice(1, 2)
+    console.log(spl);
+
+    let str = [3,5,7,6];
+    console.log(str.toString());
+
+    let srt = [8,9,5,7,6];
+    console.log(srt);
+    srt.sort();
+    console.log(srt);
+
+    console.log(srt.valueOf());
+    let srt2 = srt;
+    srt[0] = 99;
+    console.log(srt);
+
+    let [a,b,c,d] = srt;
+    console.log(a + " " + b + " " + c + ' ' +d);
+  </script>
+</body>
+</html>

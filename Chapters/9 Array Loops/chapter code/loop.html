@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>loops</title>
+</head>
+<body>
+  <script>
+    let num = 1;          // Intialization
+    while(num<= 11) {     // standard loop
+      console.log(num);  // Condition
+      num++;            //  Updating
+    }
+    console.log('final value of num is:' + num);
+
+    let x = 0;  // Non standard loop
+    while(x < 1) {
+      console.log(x);
+      x = Math.random() * 2;
+    }
+    console.log('final value of x is:' + x);
+
+    let y = 0;   // Initialization
+    do {
+      console.log(y);
+      y++;       // updating
+    } while (false);  // condition
+
+
+    for (let num = 1; num <= 10; num++) {
+      console.log(num);
+    }
+
+    let nums = [4,56,3,-87,9,78];
+    for ( let i = 0; i < nums.length; i++) {
+      console.log(nums[i]);
+    }
+  </script>
+</body>
+</html>
